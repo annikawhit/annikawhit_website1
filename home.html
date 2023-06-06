@@ -10,30 +10,7 @@
     </head>
     <body>
 
-        <!-- Image and text -->
-        <!--nav-- class="navbar navbar-expand-md navbar-dark">
-            <div class="container">
-                <img src="logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="logo">
-                <a href="#" class="navbar-brand">Franklin Animal Hospital</a>
-                
-                <button type="button" class="navbar-toggler collapsed" data-toggle="collapsed" data-target="#main-nav">
-                    <span class="menu-icon-bar"></span>
-                    <span class="menu-icon-bar"></span>
-                    <span class="menu-icon-bar"></span>
-                </button>
-                
-                <div id="main-nav" class="collapse navbar-collapse">
-                    <ul class="navbar-nav ml-auto">
-                        <li><a href="#" class="nav-item nav-link active">Home</a></li>
-                        <li><a href="#" class="nav-item nav-link">About Us</a></li>
-                        <li><a href="#" class="nav-item nav-link">About Us</a></li>
-                        <li><a href="#" class="nav-item nav-link">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </!--nav-->
-
-
+        <!--nav bar-->
         <nav class="navbar navbar-expand-md sticky-top navbar-light">
             <div class="container-xxl">
                 <a href="#home" class="navbar-brand">
@@ -66,7 +43,7 @@
                             <a class="nav-link" href="#bookanappointment">Book an Appointment</a>
                         </li>
                         <li class="nav-item ms-2 d-none d-md-inline">
-                            <a class="btn btn-secondary" href="#bookappointment">Book an Appointment</a>
+                            <a class="btn btn-secondary" id="navbar_btn" href="#bookappointment">Book an Appointment</a>
                         </li>
                     </ul>
                 </div>
@@ -77,15 +54,336 @@
         
         
         
+        <!--home page-->
+        <section id="home">
+            <div id="landing_page_image">
+                <img src="home_image-4.jpg" id="home_img" alt="home_image">
+                <h1>Welcome to Franklin Animal Hospital!</h1>
+                <p>We are committed helping your animals live their best lives.</p>
+                <button class="btn btn-secondary" href="#bookappointment">Book an Appointment Today!</button>
+            </div>
+        </section>
 
-        <div id="landing_page_image">
-            <img src="home_image-4.jpg" id="home_img" alt="home_image">
-            <h1>Welcome to Franklin Animal Hospital!</h1>
-            <p>We are committed helping your animals live their best lives.</p>
-            <button class="btn btn-secondary" href="#bookappointment">Book an Appointment Today!</button>
-        </div>
 
-        <h4>At Franklin Animal Hospital, we care for a variety of animals...</h4>
+        <!--services page-->
+        <section id="services">
+            <div class="container-lg">
+                <div class="text-center">
+                    <h2>Our Services</h2>
+                    <h3>At Franklin Animal Hospital, we care for a variety of animals...</h3>
+                </div>
+
+
+                <div class="row my-5 align-items-start justify-content-center">
+                    <div class="col-8 col-lg-4 col-xl-3">
+                        <div class="card border-0">
+                            <div class="card-header text-center">
+                                <h4 class="card-title">Dogs</h4>
+                                <p class="card-subtitle">-</p>
+                            </div>
+                            <!--ul class="list-group list-group-flush">
+                                <li class="list-group-item">Cras justo odio</li>
+                                <li class="list-group-item">Dapibus ac facilisis in</li>
+                                <li class="list-group-item">Vestibulum at eros</li>
+                            </!--ul-->
+
+                            <div class="accordion" id="dogs_accordion">
+                                <div class="accordion-item">
+                                    <h5 class="accordion-header" id="heading-1">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#d-item-1" aria-expanded="true" aria-controls="d-item-1">
+                                            CheckUp - $150
+                                        </button>
+                                    </h5>
+                                    <div id="d-item-1" class="accordion-collapse collapse"
+                                    aria-labelledby="heading-1" data-bs-parent="#dogs_accordion">
+                                        <div class="accordion-body">
+                                            <p>info about dog checkup</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h5 class="accordion-header" id="heading-2">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#d-item-2" aria-expanded="false" aria-controls="d-item-2">
+                                            Spaying/Neutering - $500
+                                        </button>
+                                    </h5>
+                                    <div id="d-item-2" class="accordion-collapse collapse"
+                                    aria-labelledby="heading-2" data-bs-parent="#dogs_accordion">
+                                        <div class="accordion-body">
+                                            <p>info about dog spaying/neutering</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h5 class="accordion-header" id="heading-3">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#d-item-3" aria-expanded="false" aria-controls="d-item-3">
+                                            Dental Care - $250
+                                        </button>
+                                    </h5>
+                                    <div id="d-item-3" class="accordion-collapse collapse"
+                                    aria-labelledby="heading-3" data-bs-parent="#dogs_accordion">
+                                        <div class="accordion-body">
+                                            <p>info about dog dental care</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h5 class="accordion-header" id="heading-4">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#d-item-4" aria-expanded="false" aria-controls="d-item-4">
+                                            Vaccination - $150
+                                        </button>
+                                    </h5>
+                                    <div id="d-item-4" class="accordion-collapse collapse"
+                                    aria-labelledby="heading-4" data-bs-parent="#dogs_accordion">
+                                        <div class="accordion-body">
+                                            <p>info about dog vaccination</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h5 class="accordion-header" id="heading-5">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#d-item-5" aria-expanded="false" aria-controls="d-item-5">
+                                            Bloodwork - $200
+                                        </button>
+                                    </h5>
+                                    <div id="d-item-5" class="accordion-collapse collapse"
+                                    aria-labelledby="heading-5" data-bs-parent="#dogs_accordion">
+                                        <div class="accordion-body">
+                                            <p>info about dog bloodwork</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h5 class="accordion-header" id="heading-6">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#d-item-6" aria-expanded="false" aria-controls="d-item-6">
+                                            Perscription Refill - Cost varies
+                                        </button>
+                                    </h5>
+                                    <div id="d-item-6" class="accordion-collapse collapse"
+                                    aria-labelledby="heading-6" data-bs-parent="#dogs_accordion">
+                                        <div class="accordion-body">
+                                            <p>info about dog perscription refill</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-8 col-lg-4 col-xl-3">
+                        <div class="card border-0">
+                            <div class="card-header text-center">
+                                <h4 class="card-title">Cats</h4>
+                                <p class="card-subtitle">-</p>
+                            </div>
+                            <div class="accordion" id="cats_accordion">
+                                <div class="accordion-item">
+                                    <h5 class="accordion-header" id="c-heading-1">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#c-item-1" aria-expanded="true" aria-controls="c-item-1">
+                                            CheckUp - $150
+                                        </button>
+                                    </h5>
+                                    <div id="c-item-1" class="accordion-collapse collapse"
+                                    aria-labelledby="c-heading-1" data-bs-parent="#cats_accordion">
+                                        <div class="accordion-body">
+                                            <p>info about dog checkup</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h5 class="accordion-header" id="c-heading-2">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#c-item-2" aria-expanded="false" aria-controls="c-item-2">
+                                            Spaying/Neutering - $500
+                                        </button>
+                                    </h5>
+                                    <div id="c-item-2" class="accordion-collapse collapse"
+                                    aria-labelledby="c-heading-2" data-bs-parent="#cats_accordion">
+                                        <div class="accordion-body">
+                                            <p>info about dog spaying/neutering</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h5 class="accordion-header" id="c-heading-3">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#c-item-3" aria-expanded="false" aria-controls="c-item-3">
+                                            Dental Care - $250
+                                        </button>
+                                    </h5>
+                                    <div id="c-item-3" class="accordion-collapse collapse"
+                                    aria-labelledby="c-heading-3" data-bs-parent="#cats_accordion">
+                                        <div class="accordion-body">
+                                            <p>info about dog dental care</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h5 class="accordion-header" id="c-heading-4">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#c-item-4" aria-expanded="false" aria-controls="c-item-4">
+                                            Vaccination - $150
+                                        </button>
+                                    </h5>
+                                    <div id="c-item-4" class="accordion-collapse collapse"
+                                    aria-labelledby="c-heading-4" data-bs-parent="#cats_accordion">
+                                        <div class="accordion-body">
+                                            <p>info about dog vaccination</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h5 class="accordion-header" id="c-heading-5">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#c-item-5" aria-expanded="false" aria-controls="c-item-5">
+                                            Bloodwork - $200
+                                        </button>
+                                    </h5>
+                                    <div id="c-item-5" class="accordion-collapse collapse"
+                                    aria-labelledby="c-heading-5" data-bs-parent="#cats_accordion">
+                                        <div class="accordion-body">
+                                            <p>info about dog bloodwork</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h5 class="accordion-header" id="heading-6">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#c-item-6" aria-expanded="false" aria-controls="c-item-6">
+                                            Perscription Refill - Cost varies
+                                        </button>
+                                    </h5>
+                                    <div id="c-item-6" class="accordion-collapse collapse"
+                                    aria-labelledby="c-heading-6" data-bs-parent="#cats_accordion">
+                                        <div class="accordion-body">
+                                            <p>info about dog perscription refill</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <div class="col-8 col-lg-4 col-xl-3">
+                        <div class="card border-0">
+                            <div class="card-header text-center">
+                                <h4 class="card-title">Small Animals</h4>
+                                <p class="card-subtitle">Rabbits, Hamsters, Guinea Pigs, Rats</p>
+                            </div>
+                            <div class="accordion" id="sp_accordion">
+                                <div class="accordion-item">
+                                    <h5 class="accordion-header" id="sp-heading-1">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#sp-item-1" aria-expanded="true" aria-controls="sp-item-1">
+                                            CheckUp - $150
+                                        </button>
+                                    </h5>
+                                    <div id="sp-item-1" class="accordion-collapse collapse"
+                                    aria-labelledby="sp-heading-1" data-bs-parent="#sp_accordion">
+                                        <div class="accordion-body">
+                                            <p>info about dog checkup</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h5 class="accordion-header" id="sp-heading-3">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#sp-item-3" aria-expanded="false" aria-controls="sp-item-3">
+                                            Dental Care - $250
+                                        </button>
+                                    </h5>
+                                    <div id="sp-item-3" class="accordion-collapse collapse"
+                                    aria-labelledby="sp-heading-3" data-bs-parent="#sp_accordion">
+                                        <div class="accordion-body">
+                                            <p>info about dog dental care</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h5 class="accordion-header" id="sp-heading-4">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#sp-item-4" aria-expanded="false" aria-controls="sp-item-4">
+                                            Vaccination - $150
+                                        </button>
+                                    </h5>
+                                    <div id="sp-item-4" class="accordion-collapse collapse"
+                                    aria-labelledby="sp-heading-4" data-bs-parent="#sp_accordion">
+                                        <div class="accordion-body">
+                                            <p>info about dog vaccination</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h5 class="accordion-header" id="sp-heading-5">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#sp-item-5" aria-expanded="false" aria-controls="sp-item-5">
+                                            Bloodwork - $200
+                                        </button>
+                                    </h5>
+                                    <div id="sp-item-5" class="accordion-collapse collapse"
+                                    aria-labelledby="sp-heading-5" data-bs-parent="#sp_accordion">
+                                        <div class="accordion-body">
+                                            <p>info about dog bloodwork</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h5 class="accordion-header" id="sp-heading-6">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#sp-item-6" aria-expanded="false" aria-controls="sp-item-6">
+                                            Perscription Refill - Cost varies
+                                        </button>
+                                    </h5>
+                                    <div id="sp-item-6" class="accordion-collapse collapse"
+                                    aria-labelledby="sp-heading-6" data-bs-parent="#sp_accordion">
+                                        <div class="accordion-body">
+                                            <p>info about dog perscription refill</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+        </section>
+
+
+
+
+
+
+        <!--our team page-->
+        <section id="ourteam">
+            <div class="container-lg">
+                <div class="text-center">
+                    <h2>Meet Our Team</h2>
+                </div>       
+        </section>
+        
 
 
 
