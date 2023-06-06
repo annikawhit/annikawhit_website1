@@ -28,7 +28,7 @@ body{ /* body must be relative for navigation */
     background-color: white!important; 
 }
 .navbar { /*change navbar background color */
-    background-color: lightblue;
+    background-color: #B8E2F2;
 }
 
 .navbar-brand { /* change navbar brand size */
@@ -39,14 +39,61 @@ body{ /* body must be relative for navigation */
     float: right;
 }
 
-h1{
+#landing_page_image h1{
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
     text-align: center;
-    padding-top: 5%;
+    
 }
-p{
+#landing_page_image p{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    
+}
+
+#landing_page_image{
+    position: relative;
+    width: 100%;
+}
+
+#landing_page_image img {
+    width: 100%;
+    height:auto;
+}
+
+#landing_page_image .btn {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
     text-align: center;
 }
 
-#home_img{
-    max-width: 100%;
+#landing_page_image .btn:hover {
+    background-color: black;
 }
