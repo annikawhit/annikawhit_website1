@@ -179,7 +179,7 @@ body{ /* body must be relative for navigation */
     margin-left: 0px;
 }
 
-.container {
+/*.container {
     max-width: 1380px;
     margin-top: 60px;
     margin-right: auto;
@@ -189,7 +189,7 @@ body{ /* body must be relative for navigation */
     padding-right: 30px;
     padding-bottom: 0px;
     padding-left: 30px;
-}
+}*/
 
 #ourteam .card {
     text-align: center;
@@ -254,4 +254,36 @@ body{ /* body must be relative for navigation */
 
 #contactus h2{
     color: #f5b118;
+}
+
+.boxed{
+    background-color:#B8E2F2;
+}
+
+.boxed h2{
+    padding-top: 5%;
+    padding-bottom: 3%;
+}
+
+.boxed h4{
+    padding-top: 3%;
+}
+
+#contactuspage{
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3%;
+    padding-bottom: 3%;
+}
+
+.boxed img {
+    max-width: 100%;
+    max-height: 100%;
+    padding-right: 8%;
+}
+
+.boxed .text {
+    font-size: 100%;
+    padding-left: 8%;
 }
