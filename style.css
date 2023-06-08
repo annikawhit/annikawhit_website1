@@ -29,6 +29,7 @@ body{ /* body must be relative for navigation */
 }
 .navbar { /*change navbar background color */
     background-color: #B8E2F2;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 20px 7px;
 }
 
 .navbar-brand { /* change navbar brand size */
@@ -41,7 +42,7 @@ body{ /* body must be relative for navigation */
 }
 
 #navbar_btn:hover {
-    background-color: #B8E2F2;
+    background-color: #076391;
 }
 
 .collapse navbar-collapse{
@@ -55,11 +56,13 @@ body{ /* body must be relative for navigation */
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     color: #f27f0c;
+    font-size: 50px;
     padding: 12px 24px;
     border: none;
     cursor: pointer;
     border-radius: 5px;
     text-align: center;
+    font-size: 40px;
     
 }
 #landing_page_image p{
@@ -261,13 +264,14 @@ body{ /* body must be relative for navigation */
 }
 
 .boxed h2{
-    padding-top: 5%;
+    padding-top: 3%;
     padding-bottom: 3%;
 }
 
 .boxed h4{
-    padding-top: 3%;
+    padding-top: 5%;
 }
+
 
 #contactuspage{
     display: grid;

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Franklin Animal Hospital</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        
+    </head>
+    <body>
+
+
+        <!--nav bar-->
+        <nav class="navbar navbar-expand-md sticky-top navbar-light">
+            <div class="container-xxl">
+                <a href="home.html#home" class="navbar-brand">
+                    <img src="logo.jpg" id="navbar_img" width="30" height="30" class="d-inline-block align-top" alt="logo">
+                    <span class="fw-bold text-secondary">
+                        Franklin Animal Hospital
+                    </span>
+                </a>
+
+                <!-- toggle button for mobile nav-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- navbar links-->
+                <div class="collapse navbar-collapse justify-content-end align-center"
+                id="main-nav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html#ourteam">Our Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html#contactus">Contact Us</a>
+                        </li>
+                        <li class="nav-item d-md-none">
+                            <a class="nav-link" href="book1.html">Book an Appointment</a>
+                        </li>
+                        <li class="nav-item ms-2 d-none d-md-inline">
+                            <a class="btn btn-secondary border-0" id="navbar_btn" href="book1.html">Book an Appointment</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+
+
+
+
+
+        <!--footer-->
+        <div class="container" id="footer">
+            <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="home.html" class="nav-link px-2 text-muted">Home</a></li>
+                <li class="nav-item"><a href="home.html#services" class="nav-link px-2 text-muted">Services</a></li>
+                <li class="nav-item"><a href="home.html#ourteam" class="nav-link px-2 text-muted">Our Team</a></li>
+                <li class="nav-item"><a href="home.html#contactus" class="nav-link px-2 text-muted">Contact Us</a></li>
+                <li class="nav-item"><a href="book1.html" class="nav-link px-2 text-muted">Book an Appointment</a></li>
+            </ul>
+            <p class="text-center text-muted">&copy; 2023 Franklin Animal Hospital, Inc</p>
+            </footer>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
+    </body>
+</html>
