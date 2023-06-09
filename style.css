@@ -57,12 +57,11 @@ body{ /* body must be relative for navigation */
     -ms-transform: translate(-50%, -50%);
     color: #f27f0c;
     font-size: 50px;
-    padding: 12px 24px;
+    padding-top: 12px 24px;
     border: none;
     cursor: pointer;
     border-radius: 5px;
     text-align: center;
-    font-size: 40px;
     
 }
 #landing_page_image p{
@@ -182,18 +181,6 @@ body{ /* body must be relative for navigation */
     margin-left: 0px;
 }
 
-/*.container {
-    max-width: 1380px;
-    margin-top: 60px;
-    margin-right: auto;
-    margin-bottom: 60px;
-    margin-left: auto;
-    padding-top: 0px;
-    padding-right: 30px;
-    padding-bottom: 0px;
-    padding-left: 30px;
-}*/
-
 #ourteam .card {
     text-align: center;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 20px 7px;
@@ -290,4 +277,24 @@ body{ /* body must be relative for navigation */
 .boxed .text {
     font-size: 100%;
     padding-left: 8%;
+}
+
+
+/*booking page*/
+
+#title h1{
+    color: #f27f0c;
+    font-size: 40px;
+    padding-top:40px;
+}
+
+#subtitle h2{
+    color: #f5b118;
+    font-size: 25px;
+    padding-top:30px;
+}
+
+#inlineFormCustomSelect{
+    position: absolute;
+    z-index: 99;
 }
