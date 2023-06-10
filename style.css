@@ -242,6 +242,12 @@ body{ /* body must be relative for navigation */
     padding-left: 8%;
 }
 
+#map{
+    height:auto;
+    max-width:100%;
+    padding-right: 10%;
+}
+
 /*careers page*/
 
 #careers h2{
@@ -249,7 +255,7 @@ body{ /* body must be relative for navigation */
 }
 
 #careers{
-    background-color:white;
+    background-color: #053f5c;
 }
 
 #careers h2{
@@ -272,12 +278,13 @@ body{ /* body must be relative for navigation */
 
 #careerspage .text {
     font-size: 100%;
-    padding-left: 8%;
+    text-align: center;
+    color:#B8E2F2
 }
 
-.cat_img{
-    height: auto;
-    max-width: 20%;
+#cat{
+    height:auto;
+    max-width:100%;
 }
 
 
