@@ -14,7 +14,7 @@
         <!--nav bar-->
         <nav class="navbar navbar-expand-md sticky-top navbar-light">
             <div class="container-xxl">
-                <a href="home.html#home" class="navbar-brand">
+                <a href="home.html" class="navbar-brand">
                     <img src="logo.jpg" id="navbar_img" width="30" height="30" class="d-inline-block align-top" alt="logo">
                     <span class="fw-bold text-secondary">
                         Franklin Animal Hospital
@@ -39,6 +39,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="home.html#contactus">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html#careers">Careers</a>
                         </li>
                         <li class="nav-item d-md-none">
                             <a class="nav-link" href="book1.html">Book an Appointment</a>
@@ -92,19 +95,17 @@
             <div class="row align-items-start justify-content-center my-2">
                 <div class="col-9 col-lg-5 col-xl-4">
                     <label for="Name">Name</label>
-                    <input type="text" class="form-control" placeholder="Name">
+                    <input type="text" class="form-control" id="inputted_pet_name" placeholder="Name">
                 </div>
                 
                 <div class="col-9 col-lg-1 col-xl-2">
                     <label for="inlineFormCustomSelect">Type of Animal:</label>
-                    <div>
-                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                    <select class="form-select" id="animal_type_select">
                             <option selected>Choose...</option>
                             <option value="Dog">Dog</option>
                             <option value="Cat">Cat</option>
                             <option value="SmallAnimal">Small Animal</option>
-                        </select>
-                    </div>
+                    </select>
                 </div>
 
                 <div class="col-9 col-lg-1 col-xl-2">
@@ -143,31 +144,31 @@
                 <label for="services_chk">Select all services that are needed:</label>
                 <div id="services_chk"> 
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <input class="form-check-input" type="checkbox" value="CheckUp" id="checkup_chk">
                         <label class="form-check-label" for="defaultCheck1">
                             CheckUp
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <input class="form-check-input" type="checkbox" value="Spaying/Neutering" id="spay_neut_chk">
                         <label class="form-check-label" for="defaultCheck1">
                             Spaying/Neutering
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <input class="form-check-input" type="checkbox" value="Dental Care" id="dental_chk">
                         <label class="form-check-label" for="defaultCheck1">
                             Dental Care
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <input class="form-check-input" type="checkbox" value="Vaccination" id="vac_chk">
                         <label class="form-check-label" for="defaultCheck1">
                             Vaccination
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <input class="form-check-input" type="checkbox" value="Perscription Refill" id="persc_chk">
                         <label class="form-check-label" for="defaultCheck1">
                             Perscription Refill
                         </label>
@@ -178,8 +179,8 @@
 
 
         <!--next btn-->
-        <div class="text-center my-5">
-            <a class="btn btn-secondary" href="book2.html">Next</a>
+        <div class="text-center my-5" id="next">
+            <a class="btn btn-secondary" href="book2.html" onclick="checked()">Next</a>
         </div>
 
         <!--footer-->
@@ -190,11 +191,52 @@
                 <li class="nav-item"><a href="home.html#services" class="nav-link px-2 text-muted">Services</a></li>
                 <li class="nav-item"><a href="home.html#ourteam" class="nav-link px-2 text-muted">Our Team</a></li>
                 <li class="nav-item"><a href="home.html#contactus" class="nav-link px-2 text-muted">Contact Us</a></li>
+                <li class="nav-item"><a href="home.html#careers" class="nav-link px-2 text-muted">Careers</a></li>
                 <li class="nav-item"><a href="book1.html" class="nav-link px-2 text-muted">Book an Appointment</a></li>
             </ul>
             <p class="text-center text-muted">&copy; 2023 Franklin Animal Hospital, Inc</p>
             </footer>
         </div>
+
+
+        <script>
+            document.getElementById("inputted_pet_name").addEventListener("input", saveInput);
+
+            function saveInput(){
+                var inputted_pet_name = document.getElementById("inputted_pet_name").value;
+
+                localStorage.setItem("inputted_pet_name", inputted_pet_name);
+        
+            }
+
+            function checked(){
+                var selected_services = [];
+                var checkup = document.getElementById("checkup_chk");
+                var spay_neut = document.getElementById("spay_neut_chk");
+                var dental = document.getElementById("dental_chk");
+                var vac = document.getElementById("vac_chk");
+                var persc = document.getElementById("persc_chk");
+
+                if (checkup.checked){
+                    selected_services.push(checkup.value);
+                }
+                if (spay_neut.checked){
+                    selected_services.push(spay_neut.value);
+                }
+                if (dental.checked){
+                    selected_services.push(dental.value);
+                }
+                if (vac.checked){
+                    selected_services.push(vac.value);
+                }
+                if (persc.checked){
+                    selected_services.push(persc.value);
+                }
+
+                localStorage.setItem("inputted_services", selected_services);
+            }
+
+        </script>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
     </body>

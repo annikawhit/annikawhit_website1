@@ -14,7 +14,7 @@
         <!--nav bar-->
         <nav class="navbar navbar-expand-md sticky-top navbar-light">
             <div class="container-xxl">
-                <a href="home.html#home" class="navbar-brand">
+                <a href="home.html" class="navbar-brand">
                     <img src="logo.jpg" id="navbar_img" width="30" height="30" class="d-inline-block align-top" alt="logo">
                     <span class="fw-bold text-secondary">
                         Franklin Animal Hospital
@@ -40,6 +40,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="home.html#contactus">Contact Us</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html#careers">Careers</a>
+                        </li>
                         <li class="nav-item d-md-none">
                             <a class="nav-link" href="book1.html">Book an Appointment</a>
                         </li>
@@ -55,11 +58,107 @@
         <div class="text-center" id="title">
             <h1>Book an Appointment</h1>
         </div>
+        
+        <section id="vets">
+            <div class="text-center" id="subtitle">
+                <h2>Select a vet:</h2>
+            </div>
+            <div class="responsive-container-block container">
+                <div class="responsive-container-block my-2">
+                    <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+                        <div class="card">
+                            <p class="text-blk name">
+                            Salome Torres
+                            </p>
+                            <p class="text-blk position">
+                                CEO
+                            </p>
+                            <p class="text-blk feature-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="vet1"  value="Salome Torres">
+                        </div>
+                </div>
+                <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+                    <div class="card">
+                        <p class="text-blk name">
+                        Johnny Campbell
+                        </p>
+                        <p class="text-blk position">
+                        CEO
+                        </p>
+                        <p class="text-blk feature-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="vet2" value="Johnny Campbell">
+                    </div>
+                </div>
+                <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+                    <div class="card">
+                        <p class="text-blk name">
+                        Samira Sharma
+                        </p>
+                        <p class="text-blk position">
+                        CEO
+                        </p>
+                        <p class="text-blk feature-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="vet3"  value="Samira Sharma">
+                    </div>
+                </div>
+                <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+                    <div class="card">
+                        <p class="text-blk name">
+                        Elliot Kaur
+                        </p>
+                        <p class="text-blk position">
+                        CEO
+                        </p>
+                        <p class="text-blk feature-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="vet4" value="Elliot Kaur">
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <div class="text-center" id="subtitle">
+            <h2>Select a date and time for the appointment:</h2>
+        </div>
+        <div class="row align-items-start justify-content-center my-3">
+            <div class="col-9 col-lg-3 col-xl-3">
+                <label for="Date">Date:</label>
+                <div>
+                    <input type="date" class="calendar-picker" id="inputted_date" style="width:300px">
+                </div>
+            </div>
+            
+            <div class="col-9 col-lg-3 col-xl-3">
+                <label for="Time">Time:</label>
+                <div>
+                    <select class="form-select" id="time_select">
+                        <option selected>Choose...</option>
+                        <option value="8:00am">8:00am</option>
+                        <option value="9:00am">9:00am</option>
+                        <option value="10:00am">10:00am</option>
+                        <option value="11:00am">11:00am</option>
+                        <option value="12:00pm">12:00pm</option>
+                        <option value="1:00pm">1:00pm</option>
+                        <option value="2:00pm">2:00pm</option>
+                        <option value="3:00pm">3:00pm</option>
+                        <option value="4:00pm">4:00pm</option>
+                        <option value="5:00pm">5:00pm</option>
+                        <option value="6:00pm">6:00pm</option>
+                    </select>
+                </div>
+            </div>
+        </div>
 
         <!--next btn-->
         <div class="text-center my-5">
-            <a class="btn btn-secondary" href="book2.html">Book Appointment</a>
+            <a class="btn btn-secondary" href="confirmation.html" onclick="getTimeAndVet()">Book Appointment</a>
         </div>
 
         <!--footer-->
@@ -70,11 +169,50 @@
                 <li class="nav-item"><a href="home.html#services" class="nav-link px-2 text-muted">Services</a></li>
                 <li class="nav-item"><a href="home.html#ourteam" class="nav-link px-2 text-muted">Our Team</a></li>
                 <li class="nav-item"><a href="home.html#contactus" class="nav-link px-2 text-muted">Contact Us</a></li>
+                <li class="nav-item"><a href="home.html#careers" class="nav-link px-2 text-muted">Careers</a></li>
                 <li class="nav-item"><a href="book1.html" class="nav-link px-2 text-muted">Book an Appointment</a></li>
             </ul>
             <p class="text-center text-muted">&copy; 2023 Franklin Animal Hospital, Inc</p>
             </footer>
         </div>
+
+
+        <script>
+
+            document.getElementById("inputted_date").addEventListener("input", saveInput);
+            document.getElementById("time_select").addEventListener("change", saveInput);
+
+            function saveInput(){
+                var inputted_date = document.getElementById("inputted_date").value;
+                
+                
+                localStorage.setItem("inputted_date", inputted_date);
+                
+            }
+            function getTimeAndVet(){
+                var inputted_time = document.getElementById("time_select").value;
+                localStorage.setItem("inputted_time", inputted_time);
+
+                var vet1 = document.getElementById("vet1");
+                var vet2 = document.getElementById("vet2");
+                var vet3 = document.getElementById("vet3");
+                var vet4 = document.getElementById("vet4");
+
+                if (vet1.checked){
+                    localStorage.setItem("inputted_vet", vet1.value);
+                }
+                else if (vet2.checked){
+                    localStorage.setItem("inputted_vet", vet2.value);
+                }
+                else if (vet3.checked){
+                    localStorage.setItem("inputted_vet", vet3.value);
+                }
+                else if (vet4.checked){
+                    localStorage.setItem("inputted_vet", vet4.value);
+                }
+            }
+
+        </script>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
     </body>
