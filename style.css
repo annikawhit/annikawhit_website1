@@ -195,12 +195,6 @@ body{ /* body must be relative for navigation */
     line-height: 30px;
 }
 
-.social-icons {
-    width: 70px;
-    display: flex;
-    justify-content: space-between;
-}
-
 .team-image-wrapper {
     clip-path: circle(50% at 50% 50%);
     width: 130px;
