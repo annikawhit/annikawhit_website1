@@ -14,7 +14,7 @@
         <!--nav bar-->
         <nav class="navbar navbar-expand-md sticky-top navbar-light">
             <div class="container-xxl">
-                <a href="home.html" class="navbar-brand">
+                <a href="index.html" class="navbar-brand">
                     <img src="logo.jpg" id="navbar_img" width="30" height="30" class="d-inline-block align-top" alt="logo">
                     <span class="fw-bold text-secondary">
                         Franklin Animal Hospital
@@ -32,16 +32,16 @@
                 id="main-nav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="home.html#services">Services</a>
+                            <a class="nav-link" href="index.html#services">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="home.html#ourteam">Our Team</a>
+                            <a class="nav-link" href="index.html#ourteam">Our Team</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="home.html#contactus">Contact Us</a>
+                            <a class="nav-link" href="index.html#contactus">Contact Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="home.html#careers">Careers</a>
+                            <a class="nav-link" href="index.html#careers">Careers</a>
                         </li>
                         <li class="nav-item d-md-none">
                             <a class="nav-link" href="book1.html">Book an Appointment</a>
@@ -187,28 +187,26 @@
         <div class="container" id="footer">
             <footer class= "my-4">
             <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                <li class="nav-item"><a href="home.html" class="nav-link px-2 text-muted">Home</a></li>
-                <li class="nav-item"><a href="home.html#services" class="nav-link px-2 text-muted">Services</a></li>
-                <li class="nav-item"><a href="home.html#ourteam" class="nav-link px-2 text-muted">Our Team</a></li>
-                <li class="nav-item"><a href="home.html#contactus" class="nav-link px-2 text-muted">Contact Us</a></li>
-                <li class="nav-item"><a href="home.html#careers" class="nav-link px-2 text-muted">Careers</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
+                <li class="nav-item"><a href="index.html#services" class="nav-link px-2 text-muted">Services</a></li>
+                <li class="nav-item"><a href="index.html#ourteam" class="nav-link px-2 text-muted">Our Team</a></li>
+                <li class="nav-item"><a href="index.html#contactus" class="nav-link px-2 text-muted">Contact Us</a></li>
+                <li class="nav-item"><a href="index.html#careers" class="nav-link px-2 text-muted">Careers</a></li>
                 <li class="nav-item"><a href="book1.html" class="nav-link px-2 text-muted">Book an Appointment</a></li>
             </ul>
             <p class="text-center text-muted">&copy; 2023 Franklin Animal Hospital, Inc</p>
             </footer>
         </div>
 
-
         <script>
             document.getElementById("inputted_pet_name").addEventListener("input", saveInput);
 
             function saveInput(){
                 var inputted_pet_name = document.getElementById("inputted_pet_name").value;
-
-                localStorage.setItem("inputted_pet_name", inputted_pet_name);
-        
+            
+                    localStorage.setItem("inputted_pet_name", inputted_pet_name);
             }
-
+            
             function checked(){
                 var selected_services = [];
                 var checkup = document.getElementById("checkup_chk");
@@ -216,7 +214,7 @@
                 var dental = document.getElementById("dental_chk");
                 var vac = document.getElementById("vac_chk");
                 var persc = document.getElementById("persc_chk");
-
+            
                 if (checkup.checked){
                     selected_services.push(checkup.value);
                 }
@@ -232,12 +230,10 @@
                 if (persc.checked){
                     selected_services.push(persc.value);
                 }
-
+            
                 localStorage.setItem("inputted_services", selected_services);
             }
-
         </script>
-
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
     </body>
 </html>

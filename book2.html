@@ -14,7 +14,7 @@
         <!--nav bar-->
         <nav class="navbar navbar-expand-md sticky-top navbar-light">
             <div class="container-xxl">
-                <a href="home.html" class="navbar-brand">
+                <a href="index.html" class="navbar-brand">
                     <img src="logo.jpg" id="navbar_img" width="30" height="30" class="d-inline-block align-top" alt="logo">
                     <span class="fw-bold text-secondary">
                         Franklin Animal Hospital
@@ -32,16 +32,16 @@
                 id="main-nav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="home.html#services">Services</a>
+                            <a class="nav-link" href="index.html#services">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="home.html#ourteam">Our Team</a>
+                            <a class="nav-link" href="index.html#ourteam">Our Team</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="home.html#contactus">Contact Us</a>
+                            <a class="nav-link" href="index.html#contactus">Contact Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="home.html#careers">Careers</a>
+                            <a class="nav-link" href="index.html#careers">Careers</a>
                         </li>
                         <li class="nav-item d-md-none">
                             <a class="nav-link" href="book1.html">Book an Appointment</a>
@@ -165,30 +165,26 @@
         <div class="container" id="footer">
             <footer class= "my-4">
             <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                <li class="nav-item"><a href="home.html" class="nav-link px-2 text-muted">Home</a></li>
-                <li class="nav-item"><a href="home.html#services" class="nav-link px-2 text-muted">Services</a></li>
-                <li class="nav-item"><a href="home.html#ourteam" class="nav-link px-2 text-muted">Our Team</a></li>
-                <li class="nav-item"><a href="home.html#contactus" class="nav-link px-2 text-muted">Contact Us</a></li>
-                <li class="nav-item"><a href="home.html#careers" class="nav-link px-2 text-muted">Careers</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
+                <li class="nav-item"><a href="index.html#services" class="nav-link px-2 text-muted">Services</a></li>
+                <li class="nav-item"><a href="index.html#ourteam" class="nav-link px-2 text-muted">Our Team</a></li>
+                <li class="nav-item"><a href="index.html#contactus" class="nav-link px-2 text-muted">Contact Us</a></li>
+                <li class="nav-item"><a href="index.html#careers" class="nav-link px-2 text-muted">Careers</a></li>
                 <li class="nav-item"><a href="book1.html" class="nav-link px-2 text-muted">Book an Appointment</a></li>
             </ul>
             <p class="text-center text-muted">&copy; 2023 Franklin Animal Hospital, Inc</p>
             </footer>
         </div>
 
-
         <script>
-
             document.getElementById("inputted_date").addEventListener("input", saveInput);
-            document.getElementById("time_select").addEventListener("change", saveInput);
 
             function saveInput(){
                 var inputted_date = document.getElementById("inputted_date").value;
-                
-                
+
                 localStorage.setItem("inputted_date", inputted_date);
-                
             }
+                        
             function getTimeAndVet(){
                 var inputted_time = document.getElementById("time_select").value;
                 localStorage.setItem("inputted_time", inputted_time);
